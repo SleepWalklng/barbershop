@@ -5,7 +5,6 @@
     <title>Барбершоп "Бородинский"</title>
 </head>
 <body>
-    <!-- Проверка -->
     <header class="main-header">
       <nav class="main-navigation">
           <a href="index.html" class="main-header-logo"><img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа">
@@ -93,13 +92,34 @@
          <section class="modal modal-login">
                 <h2>Личный кабинет</h2>
                 <p>Введите свой логин и пароль.</p>
-                <!-- Форма -->
-                <span class="modal-close">x</span>
+                <form action="https://echo.htmlacademy.ru" class="login-form" method="POST">
+                <p>
+                    <label for="user-login" class="visually-hidden">Логин</label>
+                    <input id="user-login" type="text" class="login-icon-user" name="login" placeholder="Логин">
+                </p>
+                <p>
+                    <label for="user-password" class="visually-hidden">Пароль</label>
+                    <input type="password" id="user-password" class="login-icon-password" name="password" placeholder="Пароль">
+                </p>
+                <p class="login-password-info">
+                    <label class="login-checkbox">
+                    <input type="checkbox" name="remember" class="visually-hidden">
+                    <span class="checkbox-indicator"></span>
+                    Запомнить меня
+                    </label>
+                    <a href="#" class="restore">Я забыл пароль!</a>
+                </p>
+                <button class="button" type="submit">Войти</button>
+                </form>
+                <button class="modal-close" type="button">Закрыть</button>
             </section>
             
             <section class="modal modal-map">
                     <h2 class="visually-hidden">Как до нас добраться</h2>
-                    <span class="modal-close">x</span>
+                    <p>
+                        <img src="/img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
+                    </p>
+                    <button class="modal-close" type="button">Закрыть</button>
             </section>
    
 </body>
